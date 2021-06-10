@@ -6,22 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="seckill" />
+        <module name="seckill_provider" />
         <module name="seckill-consumer" />
+        <module name="_seckill_provider" />
         <module name="_seckill-consumer" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="_seckill-consumer" target="1.8" />
+      <module name="_seckill_provider" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="seckill" target="1.8" />
       <module name="seckill-consumer" target="1.8" />
+      <module name="seckill_provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="_seckill-consumer" options="-parameters" />
+      <module name="_seckill_provider" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="seckill" options="-parameters" />
       <module name="seckill-consumer" options="-parameters" />
+      <module name="seckill_provider" options="-parameters" />
     </option>
   </component>
 </project>

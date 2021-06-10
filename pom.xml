@@ -12,12 +12,21 @@
     <artifactId>seckill</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>seckill</name>
+    <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
     </properties>
+
+    <modules>
+        <module>seckill_provider</module>
+        <module>_seckill_provider</module>
+        <module>seckill-consumer</module>
+        <module>_seckill-consumer</module>
+        <module>gateway</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
@@ -37,5 +46,12 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

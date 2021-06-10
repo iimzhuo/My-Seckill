@@ -6,6 +6,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/seckill-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/_seckill-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/seckill_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/_seckill_provider/pom.xml" />
       </list>
     </option>
   </component>

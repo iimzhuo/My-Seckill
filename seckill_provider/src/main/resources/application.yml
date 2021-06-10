@@ -1,0 +1,15 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: seckill_provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 150.158.156.214
+  datasource:
+    url: jdbc:mysql://150.158.156.214:3306/seckill?characterEncoding=utf-8&useSSL=false
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
