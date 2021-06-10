@@ -3,6 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/_seckill-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/_seckill_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/seckill-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seckill_provider" charset="UTF-8" />
   </component>
 </project>
