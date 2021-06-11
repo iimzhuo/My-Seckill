@@ -18,3 +18,11 @@ spring:
     host: 150.158.156.214
     port: 6379
     password: test123
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#服务的端点检查
+#http://127.0.0.1:9090/actuator/nacos-discovery
