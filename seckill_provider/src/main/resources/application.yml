@@ -18,4 +18,3 @@ spring:
     host: 150.158.156.214
     port: 6379
     password: test123
-
