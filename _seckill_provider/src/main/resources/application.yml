@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: seckill_provider
+    name: seckill-provider
   cloud:
     nacos:
       discovery:

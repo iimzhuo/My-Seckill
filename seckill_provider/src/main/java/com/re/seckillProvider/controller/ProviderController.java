@@ -19,7 +19,7 @@ public class ProviderController {
             @ApiImplicitParam(name = "id",value ="秒杀id",defaultValue = "1000",required = true)
     })
     public String Seckill(String id){
-        System.out.println(id);
-        return id;
+        System.out.println("i im 9090 seckill provider"+id);
+        return "9090";
     }
 }
