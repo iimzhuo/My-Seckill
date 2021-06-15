@@ -3,11 +3,11 @@ server:
 
 spring:
   application:
-    name: seckill_consumer
+    name: seckill-consumer
   cloud:
     nacos:
       discovery:
-        server-addr: 150.158.156.214
+        server-addr: 150.158.156.214:8848
     sentinel:
       transport:
         dashboard: localhost:8080

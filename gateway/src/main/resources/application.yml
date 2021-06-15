@@ -1,0 +1,29 @@
+server:
+  port: 7070
+
+spring:
+  application:
+    name: seckill-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 150.158.156.214:8848
+    #设置服务注册与发现组件结合，这样可以采用服务名的组件策略
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      #路由策略
+      routes:
+        - id: seckill-consumer
+          uri: lb://seckill-consumer
+          predicates:
+            - Method=GET,POST
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#服务的端点检查
+#http://127.0.0.1:7070/actuator/nacos-discovery
