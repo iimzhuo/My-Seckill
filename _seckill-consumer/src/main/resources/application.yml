@@ -16,3 +16,8 @@ management:
         include: "*"
 #服务的端点检查
 #http://127.0.0.1:8081/actuator/nacos-discovery
+
+feign:
+  sentinel:
+    enabled: true
+#添加feign组件对sentinel的适应,否则会提示无法找到对应的server-provider,不会触发熔断机制
