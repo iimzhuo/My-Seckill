@@ -8,6 +8,11 @@ spring:
     nacos:
       discovery:
         server-addr: 150.158.156.214
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+#添加对于sentinel熔断仪表盘支持
 
 management:
   endpoints:
