@@ -12,6 +12,7 @@ spring:
       transport:
         dashboard: localhost:8080
         port: 8719
+#http://150.158.156.214:8080/#/dashboard/home
 #添加对于sentinel熔断仪表盘支持
 
 management:
