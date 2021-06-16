@@ -19,4 +19,23 @@ public class SeckillServiceImpl implements SeckillService{
     public List<Seckill> getProduct(Integer seckill_id) {
         return seckillMapper.selectList(null);
     }
+
+    @Override
+    /**
+     * 通过加入aop切面锁，保证分布式环境下线程安全性
+     */
+    public Boolean startSeckill(Long seckill_id) {
+
+
+        return true;
+    }
+
+    @Override
+    public void resetNum(Long seckill_id) {
+        Seckill seckill=new Seckill();
+        seckill.setSeckill_id(seckill_id);
+        seckill.setNumber(100);
+        //更新秒杀商品的数量
+        seckillMapper.updateById(seckill)
+    }
 }
