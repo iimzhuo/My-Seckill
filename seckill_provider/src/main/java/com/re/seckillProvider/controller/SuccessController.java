@@ -14,14 +14,14 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/success")
-@Api(tags = "服务提供者，成功秒杀服务")
+@Api(tags = "Success_Killed 服务提供者")
 public class SuccessController {
     @Autowired
     private SuccessService service;  //field injection is not recommended
 
     @GetMapping
     @ApiImplicitParams({
-            @ApiImplicitParam(name="Id",value = "成功秒杀ID",required = true)
+            @ApiImplicitParam(name="Id",value = "成功秒杀ID",required = true,defaultValue = "1000")
     })
     public List<Success_Killed> getKilled(String Id){
         return service.getKilled();
