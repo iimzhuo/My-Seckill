@@ -40,7 +40,7 @@ public class ProviderController {
     @PutMapping("/reset/{id}")
     @ApiOperation(value = "Seckill,重置秒杀数量")
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "Id",value = "商品id",defaultValue = "1000",required = true)
+            @ApiImplicitParam(name = "id",value = "商品id",defaultValue = "1000",required = true)
     })
     public String resetNum(@PathVariable String id){
         seckillService.resetNum(Long.parseLong(id));

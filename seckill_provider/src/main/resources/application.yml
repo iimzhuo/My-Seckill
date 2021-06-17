@@ -26,3 +26,4 @@
 #        include: "*"
 ##服务的端点检查
 ##http://127.0.0.1:9090/actuator/nacos-discovery
+
