@@ -23,4 +23,11 @@ public interface SeckillService {
      * @param seckill_id 商品id
      */
     void resetNum(Long seckill_id);
+
+    /**
+     * 获取秒杀结果，现存多少件，秒杀多少件
+     * @param seckill_id 商品id
+     * @return 秒杀结果
+     */
+    String getResult(Long seckill_id);
 }

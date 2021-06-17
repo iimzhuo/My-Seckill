@@ -18,6 +18,13 @@ public class ProviderController {
     @Autowired
     private SeckillService seckillService;
 
+    private static int num=0;
+
+    /**
+     * 查看所有被秒杀商品信息
+     * @param id
+     * @return
+     */
     @GetMapping("/{id}")
     @ApiOperation("Seckill,查看所有待秒杀商品")
     @ApiImplicitParams({
@@ -28,15 +35,28 @@ public class ProviderController {
         return seckillService.getProduct(Integer.parseInt(id));
     }
 
+    /**
+     * 开始秒杀
+     * @param id 商品id
+     * @return 秒杀结果
+     */
     @PutMapping("/{id}")
     @ApiOperation(value="Seckill,开始秒杀 ")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "id",value = "商品id",defaultValue = "1000",required = true)
     })
-    public Boolean startSeckil(@PathVariable String id){
-        return seckillService.startSeckill(Long.parseLong(id));
+    public String startSeckil(@PathVariable String id){
+        System.out.println(id);
+        seckillService.startSeckill(Long.parseLong(id));
+        num++;
+        return "第："+num +"件商品秒杀成功";
     }
 
+    /**
+     * 重置某件商品的初始秒杀数量
+     * @param id 商品id
+     * @return success
+     */
     @PutMapping("/reset/{id}")
     @ApiOperation(value = "Seckill,重置秒杀数量")
     @ApiImplicitParams({
@@ -45,5 +65,14 @@ public class ProviderController {
     public String resetNum(@PathVariable String id){
         seckillService.resetNum(Long.parseLong(id));
         return "reset success";
+    }
+
+    @GetMapping("/info/{id}")
+    @ApiOperation(value = "Seckill,获取某件商品的秒杀情况")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id",value = "商品id",defaultValue = "1000",required = true)
+    })
+    public String getMessage(@PathVariable String id){
+        return seckillService.getResult(Long.parseLong(id));
     }
 }
