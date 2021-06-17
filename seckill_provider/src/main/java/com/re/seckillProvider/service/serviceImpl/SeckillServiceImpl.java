@@ -20,10 +20,10 @@ public class SeckillServiceImpl implements SeckillService{
         return seckillMapper.selectList(null);
     }
 
-    @Override
     /**
      * 通过加入aop切面锁，保证分布式环境下线程安全性
      */
+    @Override
     public Boolean startSeckill(Long seckill_id) {
 
 
@@ -36,6 +36,6 @@ public class SeckillServiceImpl implements SeckillService{
         seckill.setSeckill_id(seckill_id);
         seckill.setNumber(100);
         //更新秒杀商品的数量
-        seckillMapper.updateById(seckill)
+        seckillMapper.updateById(seckill);
     }
 }
