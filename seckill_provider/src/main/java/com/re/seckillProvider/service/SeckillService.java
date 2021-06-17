@@ -19,6 +19,13 @@ public interface SeckillService {
     Boolean startSeckill(Long seckill_id);
 
     /**
+     * 数据库乐观锁实现秒杀
+     * @param seckill_id 商品id
+     * @return 是否秒杀成功
+     */
+    Boolean startSeckillOp(Long seckill_id);
+
+    /**
      * 重置秒杀数量
      * @param seckill_id 商品id
      */

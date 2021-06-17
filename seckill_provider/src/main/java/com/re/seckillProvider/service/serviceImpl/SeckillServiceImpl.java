@@ -36,10 +36,10 @@ public class SeckillServiceImpl implements SeckillService{
 
     /**
      * 通过加入aop切面锁，保证分布式环境下线程安全性,此秒杀为单机秒杀
-     * ab -n 200 -c 30 -u D:\a.txt http://localhost:9093/provider/1000  将近9s
+     * ab -n 200 -c 30 -u D:\a.txt http://localhost:9093/provider/1000  将近9s,不加锁 3s
      */
     @Override
-    @ServiceLock
+    //@ServiceLock
     @Transactional
     public Boolean startSeckill(Long seckill_id) {
         int total=seckillMapper.getTotal(seckill_id);
@@ -60,6 +60,21 @@ public class SeckillServiceImpl implements SeckillService{
             log.info("秒杀成功");
         }else{
             return false;
+        }
+        return true;
+    }
+
+    @Override
+    public Boolean startSeckillOp(Long seckill_id) {
+        int count=seckillMapper.ReleaseOp(seckill_id);
+        if(count<0){
+            return false;
+        }else{
+            Success_Killed success_killed=new Success_Killed();
+            success_killed.setUser_id(user_id++);
+            success_killed.setSeckill_id(seckill_id);
+            success_killed.setState(1);
+            successKillMapper.insert(success_killed);
         }
         return true;
     }
