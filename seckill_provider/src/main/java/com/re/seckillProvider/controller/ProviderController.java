@@ -46,8 +46,9 @@ public class ProviderController {
             @ApiImplicitParam(name = "id",value = "商品id",defaultValue = "1000",required = true)
     })
     public String startSeckil(@PathVariable String id){
-        System.out.println(id);
-        seckillService.startSeckill(Long.parseLong(id));
+        //System.out.println(id);
+        //seckillService.startSeckill(Long.parseLong(id));
+        seckillService.startSeckillOp(Long.parseLong(id)); //数据库乐观锁秒杀
         num++;
         return "第："+num +"件商品秒杀成功";
     }

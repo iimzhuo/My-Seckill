@@ -41,7 +41,7 @@ public class SeckillServiceImpl implements SeckillService{
     @Override
     @ServiceLock
     @Transactional
-    public Boolean startSeckill(Long seckill_id) {
+    public  Boolean startSeckill(Long seckill_id) {
         int total=seckillMapper.getTotal(seckill_id);
         //性能太差，每次都查询一个对象
         /*QueryWrapper<Seckill> wrapper=new QueryWrapper<>();
@@ -72,7 +72,7 @@ public class SeckillServiceImpl implements SeckillService{
     @Override
     public Boolean startSeckillOp(Long seckill_id) {
         int count=seckillMapper.ReleaseOp(seckill_id);
-        if(count<0){
+        if(count<=0){
             return false;
         }else{
             Success_Killed success_killed=new Success_Killed();
