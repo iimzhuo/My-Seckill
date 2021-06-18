@@ -39,7 +39,7 @@ public class SeckillServiceImpl implements SeckillService{
      * ab -n 200 -c 30 -u D:\a.txt http://localhost:9093/provider/1000  将近9s,不加锁 3s
      */
     @Override
-    //@ServiceLock
+    @ServiceLock
     @Transactional
     public Boolean startSeckill(Long seckill_id) {
         int total=seckillMapper.getTotal(seckill_id);
@@ -64,6 +64,11 @@ public class SeckillServiceImpl implements SeckillService{
         return true;
     }
 
+    /**
+     * 数据库乐观锁实现秒杀
+     * @param seckill_id 商品id
+     * @return 秒杀结果
+     */
     @Override
     public Boolean startSeckillOp(Long seckill_id) {
         int count=seckillMapper.ReleaseOp(seckill_id);
@@ -84,7 +89,7 @@ public class SeckillServiceImpl implements SeckillService{
      * @param seckill_id 商品id
      */
     @Override
-    public void resetNum(Long seckill_id) {
+    public void  resetNum(Long seckill_id) {
         Seckill seckill=new Seckill();
         seckill.setSeckill_id(seckill_id);
         seckill.setNumber(100);
