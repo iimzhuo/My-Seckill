@@ -13,6 +13,6 @@ public interface SeckillMapper extends BaseMapper<Seckill> {
     @Select("select number from seckill where seckill_id = #{seckill_id}")
     int getTotal(@Param("seckill_id") Long seckill_id);
 
-    @Update("update seckill set number=number-1 where seckill_id=#{seckill_id} and num>0")
+    @Update("update seckill set number=number-1 where seckill_id=#{seckill_id} and number>0")
     int ReleaseOp(@Param("seckill_id") Long seckill_id);
 }

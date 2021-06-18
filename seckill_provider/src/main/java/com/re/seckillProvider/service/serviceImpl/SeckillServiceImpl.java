@@ -72,7 +72,7 @@ public class SeckillServiceImpl implements SeckillService{
     @Override
     public Boolean startSeckillOp(Long seckill_id) {
         int count=seckillMapper.ReleaseOp(seckill_id);
-        if(count<0){
+        if(count<=0){
             return false;
         }else{
             Success_Killed success_killed=new Success_Killed();
