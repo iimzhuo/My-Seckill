@@ -64,6 +64,11 @@ public class SeckillServiceImpl implements SeckillService{
         return true;
     }
 
+    /**
+     * 数据库乐观锁实现秒杀
+     * @param seckill_id 商品id
+     * @return 秒杀结果
+     */
     @Override
     public Boolean startSeckillOp(Long seckill_id) {
         int count=seckillMapper.ReleaseOp(seckill_id);
@@ -84,7 +89,7 @@ public class SeckillServiceImpl implements SeckillService{
      * @param seckill_id 商品id
      */
     @Override
-    public void resetNum(Long seckill_id) {
+    public void  resetNum(Long seckill_id) {
         Seckill seckill=new Seckill();
         seckill.setSeckill_id(seckill_id);
         seckill.setNumber(100);
