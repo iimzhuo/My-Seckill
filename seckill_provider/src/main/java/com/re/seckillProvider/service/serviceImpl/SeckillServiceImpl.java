@@ -39,7 +39,7 @@ public class SeckillServiceImpl implements SeckillService{
      * ab -n 200 -c 30 -u D:\a.txt http://localhost:9093/provider/1000  将近9s,不加锁 3s
      */
     @Override
-    //@ServiceLock
+    @ServiceLock
     @Transactional
     public Boolean startSeckill(Long seckill_id) {
         int total=seckillMapper.getTotal(seckill_id);
