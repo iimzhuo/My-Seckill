@@ -27,6 +27,8 @@ public class SeckillServiceImpl implements SeckillService{
     @Resource
     private SuccessKillMapper successKillMapper;
 
+    private static volatile Long user_ids=1L;
+
     private static Long user_id=1L;
 
     @Override
@@ -68,6 +70,7 @@ public class SeckillServiceImpl implements SeckillService{
      * 数据库乐观锁实现秒杀
      * @param seckill_id 商品id
      * @return 秒杀结果
+     * ab -n 200 -c 30 -u D:\a.txt http://localhost:9093/provider/1000  耗时1s
      */
     @Override
     public Boolean startSeckillOp(Long seckill_id) {
@@ -76,7 +79,7 @@ public class SeckillServiceImpl implements SeckillService{
             return false;
         }else{
             Success_Killed success_killed=new Success_Killed();
-            success_killed.setUser_id(user_id++);
+            success_killed.setUser_id(user_ids++);
             success_killed.setSeckill_id(seckill_id);
             success_killed.setState(1);
             successKillMapper.insert(success_killed);
