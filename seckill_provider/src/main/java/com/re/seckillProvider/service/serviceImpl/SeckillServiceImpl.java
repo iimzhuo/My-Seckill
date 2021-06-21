@@ -16,6 +16,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 @Service
 @Slf4j
@@ -30,6 +33,18 @@ public class SeckillServiceImpl implements SeckillService{
     private static volatile Long user_ids=1L;
 
     private static Long user_id=1L;
+
+    /**
+     * 获取jvm可用的处理器数量
+     */
+    private static int corePoolSize=Runtime.getRuntime().availableProcessors();
+
+    /**
+     * 创建线程池，调整队列数
+     */
+    private static ThreadPoolExecutor executor=new ThreadPoolExecutor(corePoolSize,
+            corePoolSize+1,10L, TimeUnit.SECONDS,
+            new LinkedBlockingDeque<>(1000));
 
     @Override
     public List<Seckill> getProduct(Integer seckill_id) {
@@ -70,19 +85,24 @@ public class SeckillServiceImpl implements SeckillService{
      * 数据库乐观锁实现秒杀
      * @param seckill_id 商品id
      * @return 秒杀结果
-     * ab -n 200 -c 30 -u D:\a.txt http://localhost:9093/provider/1000  耗时1s
+     * ab -n 1000 -c 50 -u D:\a.txt http://localhost:9093/provider/1000  耗时1.3s
      */
     @Override
+    @Transactional
     public Boolean startSeckillOp(Long seckill_id) {
         int count=seckillMapper.ReleaseOp(seckill_id);
         if(count<=0){
             return false;
         }else{
-            Success_Killed success_killed=new Success_Killed();
-            success_killed.setUser_id(user_ids++);
-            success_killed.setSeckill_id(seckill_id);
-            success_killed.setState(1);
-            successKillMapper.insert(success_killed);
+            Runnable task=()-> {   //开启异步线程
+                    Success_Killed success_killed=new Success_Killed();
+                    success_killed.setUser_id(System.currentTimeMillis()%100);
+                    success_killed.setSeckill_id(seckill_id);
+                    success_killed.setState(1);
+                    successKillMapper.insert(success_killed);
+            };
+            executor.execute(task);
+            log.info("Thread-"+user_ids);
         }
         return true;
     }

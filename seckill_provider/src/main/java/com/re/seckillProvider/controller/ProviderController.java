@@ -47,9 +47,10 @@ public class ProviderController {
     })
     public String startSeckil(@PathVariable String id){
         //System.out.println(id);
-        //seckillService.startSeckill(Long.parseLong(id));
+        //seckillService.startSeckill(Long.parseLong(id));  //使用切面锁去实现秒杀
         seckillService.startSeckillOp(Long.parseLong(id)); //数据库乐观锁秒杀
         num++;
+        System.out.println("第："+num +"件商品秒杀成功");
         return "第："+num +"件商品秒杀成功";
     }
 
