@@ -29,7 +29,7 @@ public class SeckillServiceImpl implements SeckillService{
 
     private static volatile Long user_ids=1L;
 
-    private static  Long user_id=1L;
+    private static Long user_id=1L;
 
     @Override
     public List<Seckill> getProduct(Integer seckill_id) {
