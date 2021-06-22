@@ -7,9 +7,7 @@
         <artifactId>seckill</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.re</groupId>
     <artifactId>seckill_provider</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>seckill_provider</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -58,6 +56,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!--添加redis支持-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.10.1</version>
         </dependency>
     </dependencies>
 
