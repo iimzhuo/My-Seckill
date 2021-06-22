@@ -18,6 +18,6 @@ public class SeckillConsumer {
     @GetMapping
     @ApiOperation("Seckill 秒杀服务消费者接口")
     public String Seckill(){
-        return feignService.seckill();
+        return feignService.seckill("1000");
     }
 }
