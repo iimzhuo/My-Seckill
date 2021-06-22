@@ -8,6 +8,7 @@ import com.re.seckillProvider.entity.Seckill;
 import com.re.seckillProvider.entity.Success_Killed;
 import com.re.seckillProvider.mapper.SeckillMapper;
 import com.re.seckillProvider.mapper.SuccessKillMapper;
+import com.re.seckillProvider.myRedis.MyRedisLock;
 import com.re.seckillProvider.redis.RedisLock;
 import com.re.seckillProvider.service.SeckillService;
 import lombok.extern.slf4j.Slf4j;
@@ -115,7 +116,8 @@ public class SeckillServiceImpl implements SeckillService{
      */
     @Override
     @Transactional
-    @RedisLock
+    //@RedisLock
+    @MyRedisLock  //使用自定义的redis分布式锁
     public Boolean startRedisSeckill(Long seckill_id) {
         int total=seckillMapper.getTotal(seckill_id);
         if(total>0){
@@ -134,7 +136,6 @@ public class SeckillServiceImpl implements SeckillService{
         }
         return true;
     }
-
 
     /**
      * 重置秒杀数量

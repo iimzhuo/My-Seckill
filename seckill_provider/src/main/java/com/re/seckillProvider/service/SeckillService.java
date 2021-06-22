@@ -32,6 +32,7 @@ public interface SeckillService {
      */
     Boolean startRedisSeckill(Long seckill_id);
 
+
     /**
      * 重置秒杀数量
      * @param seckill_id 商品id
