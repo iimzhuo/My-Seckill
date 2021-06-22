@@ -26,6 +26,13 @@ public interface SeckillService {
     Boolean startSeckillOp(Long seckill_id);
 
     /**
+     * redis分布式锁秒杀
+     * @param seckill_id
+     * @return
+     */
+    Boolean startRedisSeckill(Long seckill_id);
+
+    /**
      * 重置秒杀数量
      * @param seckill_id 商品id
      */

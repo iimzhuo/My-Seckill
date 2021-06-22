@@ -8,6 +8,7 @@ import com.re.seckillProvider.entity.Seckill;
 import com.re.seckillProvider.entity.Success_Killed;
 import com.re.seckillProvider.mapper.SeckillMapper;
 import com.re.seckillProvider.mapper.SuccessKillMapper;
+import com.re.seckillProvider.redis.RedisLock;
 import com.re.seckillProvider.service.SeckillService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,7 +54,7 @@ public class SeckillServiceImpl implements SeckillService{
 
     /**
      * 通过加入aop切面锁，保证分布式环境下线程安全性,此秒杀为单机秒杀
-     * ab -n 200 -c 30 -u D:\a.txt http://localhost:9093/provider/1000  将近9s,不加锁 3s
+     * ab -n 200 -c 30 -u D:\Re.txt http://localhost:9093/provider/1000  将近9s,不加锁 3s
      */
     @Override
     @ServiceLock
@@ -85,7 +86,7 @@ public class SeckillServiceImpl implements SeckillService{
      * 数据库乐观锁实现秒杀
      * @param seckill_id 商品id
      * @return 秒杀结果
-     * ab -n 1000 -c 50 -u D:\a.txt http://localhost:9093/provider/1000  耗时1.3s
+     * ab -n 1000 -c 50 -u D:\Re.txt http://localhost:9093/provider/1000  耗时1.3s
      */
     @Override
     @Transactional
@@ -96,16 +97,44 @@ public class SeckillServiceImpl implements SeckillService{
         }else{
             Runnable task=()-> {   //开启异步线程
                     Success_Killed success_killed=new Success_Killed();
-                    success_killed.setUser_id(System.currentTimeMillis()%100);
+                    success_killed.setUser_id(user_ids++);
                     success_killed.setSeckill_id(seckill_id);
                     success_killed.setState(1);
                     successKillMapper.insert(success_killed);
             };
             executor.execute(task);
-            log.info("Thread-"+user_ids);
         }
         return true;
     }
+
+    /**
+     * redis分布式秒杀
+     * @param seckill_id 秒杀id
+     * @return 秒杀结果
+     * ab -n 1000 -c 50 -u D:\Re.txt http://localhost:9093/provider/redis/1000
+     */
+    @Override
+    @Transactional
+    @RedisLock
+    public Boolean startRedisSeckill(Long seckill_id) {
+        int total=seckillMapper.getTotal(seckill_id);
+        if(total>0){
+            //库存减一
+            seckillMapper.Release(seckill_id);
+            Runnable task=()-> {   //开启异步线程
+                Success_Killed success_killed=new Success_Killed();
+                success_killed.setUser_id(user_ids++);
+                success_killed.setSeckill_id(seckill_id);
+                success_killed.setState(1);
+                successKillMapper.insert(success_killed);
+            };
+            executor.execute(task);
+        }else{
+            return false;
+        }
+        return true;
+    }
+
 
     /**
      * 重置秒杀数量

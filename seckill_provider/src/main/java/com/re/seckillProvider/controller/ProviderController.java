@@ -55,6 +55,22 @@ public class ProviderController {
     }
 
     /**
+     * redis分布式锁秒杀
+     * @param id 商品id
+     * @return 秒杀结果
+     */
+    @PutMapping("/redis/{id}")
+    @ApiOperation("Seckill Redis分布式锁秒杀")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id",value = "商品id",defaultValue = "1000",required = true)
+    })
+    public String startRedisSeckil(@PathVariable("id") String id){
+        Boolean result = seckillService.startRedisSeckill(Long.parseLong(id));
+        num++;
+        return "第："+num +"件商品秒杀成功";
+    }
+
+    /**
      * 重置某件商品的初始秒杀数量
      * @param id 商品id
      * @return success
