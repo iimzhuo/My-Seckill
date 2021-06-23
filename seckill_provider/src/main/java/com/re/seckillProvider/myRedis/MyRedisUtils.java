@@ -15,7 +15,7 @@ public class MyRedisUtils {
      * @return   是否获取到锁
      */
     public Boolean lock(String key,String value){
-        if(key.equals("1000")) return false;
+        //if(key.equals("1000")) return false;
         //当key没有对应的value时，说明获取锁成功
         if(redisTemplate.opsForValue().setIfAbsent(key,value)){
             return true;
