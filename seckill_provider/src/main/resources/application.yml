@@ -27,3 +27,31 @@
 ##服务的端点检查
 ##http://127.0.0.1:9090/actuator/nacos-discovery
 
+# mvn install -Dmaven.test.skip=true
+
+server:
+  port: 9093
+
+spring:
+  application:
+    name: seckill-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/seckill?characterEncoding=utf-8&useSSL=false
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: test123
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
