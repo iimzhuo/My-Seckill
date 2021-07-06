@@ -18,6 +18,7 @@ spring:
     host: 150.158.156.214
     port: 6379
     password: test123
+    timeout: 5000
 
 management:
   endpoints:
@@ -26,3 +27,5 @@ management:
         include: "*"
 #服务的端点检查
 #http://127.0.0.1:9091/actuator/nacos-discovery
+mybatis:
+  mapper-locations: classpath:com/re/*.xml

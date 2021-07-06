@@ -1,0 +1,212 @@
+2021-06-22 10:53:35.133 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-22 10:53:35.220 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-22 10:53:35.688 INFO  com.alibaba.nacos.client.config.utils.JVMUtil Line:47  - isMultiInstance:false
+2021-06-22 10:53:35.756 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-22 10:53:35.779 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-22 10:53:37.950 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-22 10:53:37.956 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-22 10:53:38.021 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2021-06-22 10:53:38.550 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=6bd4d713-8a4a-3b5d-8804-08f5cebaf06b
+2021-06-22 10:53:42.590 INFO  org.redisson.Version Line:41  - Redisson 3.10.1
+2021-06-22 10:53:44.071 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:169 - 1 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 10:53:44.077 INFO  org.redisson.connection.pool.MasterConnectionPool Line:169 - 10 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 10:53:46.814 INFO  com.alibaba.nacos.client.naming Line:56  - initializer namespace from System Property :null
+2021-06-22 10:53:46.820 INFO  com.alibaba.nacos.client.naming Line:65  - initializer namespace from System Environment :null
+2021-06-22 10:53:46.823 INFO  com.alibaba.nacos.client.naming Line:75  - initializer namespace from System Property :null
+2021-06-22 10:53:47.426 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:58  - Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-06-22 10:53:47.912 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-22 10:53:48.305 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 10:53:48.325 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 10:53:48.776 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-22 10:53:49.134 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:181 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 10:53:50.477 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:160 - Context refreshed
+2021-06-22 10:53:50.532 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:163 - Found 1 custom documentation plugin(s)
+2021-06-22 10:53:50.620 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2021-06-22 10:53:51.000 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:61  - Started SeckillProviderApplicationTests in 18.52 seconds (JVM running for 23.696)
+2021-06-22 10:53:51.069 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config+DEFAULT_GROUP
+2021-06-22 10:53:51.073 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config, group=DEFAULT_GROUP, cnt=1
+2021-06-22 10:53:51.075 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config.yaml+DEFAULT_GROUP
+2021-06-22 10:53:51.076 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config.yaml, group=DEFAULT_GROUP, cnt=1
+2021-06-22 10:53:51.124 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:522 - get changedGroupKeys:[]
+2021-06-22 10:53:51.801 INFO  io.lettuce.core.EpollProvider Line:68  - Starting without optional epoll library
+2021-06-22 10:53:51.805 INFO  io.lettuce.core.KqueueProvider Line:70  - Starting without optional kqueue library
+2021-06-22 10:53:52.089 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:218 - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 10:53:52.097 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-22 11:27:23.530 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-22 11:27:23.616 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-22 11:27:24.108 INFO  com.alibaba.nacos.client.config.utils.JVMUtil Line:47  - isMultiInstance:false
+2021-06-22 11:27:24.178 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-22 11:27:24.200 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-22 11:27:26.365 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-22 11:27:26.376 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-22 11:27:26.415 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2021-06-22 11:27:26.902 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=0b4b5530-9284-3fa1-ba0d-6917561c2985
+2021-06-22 11:27:30.490 INFO  org.redisson.Version Line:41  - Redisson 3.10.1
+2021-06-22 11:27:32.844 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:169 - 1 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 11:27:32.971 INFO  org.redisson.connection.pool.MasterConnectionPool Line:169 - 10 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 11:27:35.550 INFO  com.alibaba.nacos.client.naming Line:56  - initializer namespace from System Property :null
+2021-06-22 11:27:35.553 INFO  com.alibaba.nacos.client.naming Line:65  - initializer namespace from System Environment :null
+2021-06-22 11:27:35.555 INFO  com.alibaba.nacos.client.naming Line:75  - initializer namespace from System Property :null
+2021-06-22 11:27:36.090 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:58  - Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-06-22 11:27:36.516 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-22 11:27:36.840 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 11:27:36.854 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 11:27:37.291 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-22 11:27:37.692 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:181 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 11:27:38.907 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:160 - Context refreshed
+2021-06-22 11:27:38.943 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:163 - Found 1 custom documentation plugin(s)
+2021-06-22 11:27:39.021 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2021-06-22 11:27:39.392 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:61  - Started SeckillProviderApplicationTests in 19.557 seconds (JVM running for 22.643)
+2021-06-22 11:27:39.458 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config+DEFAULT_GROUP
+2021-06-22 11:27:39.463 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config, group=DEFAULT_GROUP, cnt=1
+2021-06-22 11:27:39.464 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config.yaml+DEFAULT_GROUP
+2021-06-22 11:27:39.467 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config.yaml, group=DEFAULT_GROUP, cnt=1
+2021-06-22 11:27:39.509 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:522 - get changedGroupKeys:[]
+2021-06-22 11:27:40.049 INFO  io.lettuce.core.EpollProvider Line:68  - Starting without optional epoll library
+2021-06-22 11:27:40.052 INFO  io.lettuce.core.KqueueProvider Line:70  - Starting without optional kqueue library
+2021-06-22 11:27:40.376 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:218 - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 11:27:40.382 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-22 11:28:09.740 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-22 11:28:09.822 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-22 11:28:10.276 INFO  com.alibaba.nacos.client.config.utils.JVMUtil Line:47  - isMultiInstance:false
+2021-06-22 11:28:10.357 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-22 11:28:10.377 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-22 11:28:12.441 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-22 11:28:12.446 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-22 11:28:12.482 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2021-06-22 11:28:12.980 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=0b4b5530-9284-3fa1-ba0d-6917561c2985
+2021-06-22 11:28:16.627 INFO  org.redisson.Version Line:41  - Redisson 3.10.1
+2021-06-22 11:28:18.101 INFO  org.redisson.connection.pool.MasterConnectionPool Line:169 - 10 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 11:28:18.101 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:169 - 1 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 11:28:20.665 INFO  com.alibaba.nacos.client.naming Line:56  - initializer namespace from System Property :null
+2021-06-22 11:28:20.669 INFO  com.alibaba.nacos.client.naming Line:65  - initializer namespace from System Environment :null
+2021-06-22 11:28:20.673 INFO  com.alibaba.nacos.client.naming Line:75  - initializer namespace from System Property :null
+2021-06-22 11:28:21.193 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:58  - Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-06-22 11:28:21.573 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-22 11:28:21.970 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 11:28:21.982 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 11:28:22.518 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-22 11:28:22.865 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:181 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 11:28:24.077 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:160 - Context refreshed
+2021-06-22 11:28:24.117 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:163 - Found 1 custom documentation plugin(s)
+2021-06-22 11:28:24.192 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2021-06-22 11:28:24.537 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:61  - Started SeckillProviderApplicationTests in 18.036 seconds (JVM running for 20.912)
+2021-06-22 11:28:24.591 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config+DEFAULT_GROUP
+2021-06-22 11:28:24.598 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config, group=DEFAULT_GROUP, cnt=1
+2021-06-22 11:28:24.599 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config.yaml+DEFAULT_GROUP
+2021-06-22 11:28:24.601 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config.yaml, group=DEFAULT_GROUP, cnt=1
+2021-06-22 11:28:24.638 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:522 - get changedGroupKeys:[]
+2021-06-22 11:28:24.675 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:522 - get changedGroupKeys:[]
+2021-06-22 11:28:25.153 INFO  io.lettuce.core.EpollProvider Line:68  - Starting without optional epoll library
+2021-06-22 11:28:25.155 INFO  io.lettuce.core.KqueueProvider Line:70  - Starting without optional kqueue library
+2021-06-22 11:28:25.518 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:218 - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 11:28:25.522 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-22 11:30:05.305 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-22 11:30:05.389 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-22 11:30:05.844 INFO  com.alibaba.nacos.client.config.utils.JVMUtil Line:47  - isMultiInstance:false
+2021-06-22 11:30:05.907 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-22 11:30:05.930 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-22 11:30:08.332 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-22 11:30:08.338 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-22 11:30:08.393 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
+2021-06-22 11:30:09.039 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=0b4b5530-9284-3fa1-ba0d-6917561c2985
+2021-06-22 11:30:13.158 INFO  org.redisson.Version Line:41  - Redisson 3.10.1
+2021-06-22 11:30:15.557 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:169 - 1 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 11:30:15.714 INFO  org.redisson.connection.pool.MasterConnectionPool Line:169 - 10 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 11:30:18.315 INFO  com.alibaba.nacos.client.naming Line:56  - initializer namespace from System Property :null
+2021-06-22 11:30:18.318 INFO  com.alibaba.nacos.client.naming Line:65  - initializer namespace from System Environment :null
+2021-06-22 11:30:18.321 INFO  com.alibaba.nacos.client.naming Line:75  - initializer namespace from System Property :null
+2021-06-22 11:30:18.842 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:58  - Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-06-22 11:30:19.231 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-22 11:30:19.570 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 11:30:19.587 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 11:30:20.136 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-22 11:30:20.491 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:181 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 11:30:21.698 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:160 - Context refreshed
+2021-06-22 11:30:21.738 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:163 - Found 1 custom documentation plugin(s)
+2021-06-22 11:30:21.825 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2021-06-22 11:30:22.158 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:61  - Started SeckillProviderApplicationTests in 20.369 seconds (JVM running for 23.441)
+2021-06-22 11:30:22.219 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config+DEFAULT_GROUP
+2021-06-22 11:30:22.223 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config, group=DEFAULT_GROUP, cnt=1
+2021-06-22 11:30:22.224 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config.yaml+DEFAULT_GROUP
+2021-06-22 11:30:22.225 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config.yaml, group=DEFAULT_GROUP, cnt=1
+2021-06-22 11:30:22.371 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:522 - get changedGroupKeys:[]
+2021-06-22 11:30:22.769 INFO  io.lettuce.core.EpollProvider Line:68  - Starting without optional epoll library
+2021-06-22 11:30:22.772 INFO  io.lettuce.core.KqueueProvider Line:70  - Starting without optional kqueue library
+2021-06-22 11:30:23.120 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:218 - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 11:30:23.126 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-22 14:14:56.277 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-22 14:14:56.395 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-22 14:14:56.987 INFO  com.alibaba.nacos.client.config.utils.JVMUtil Line:47  - isMultiInstance:false
+2021-06-22 14:14:57.052 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-22 14:14:57.076 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-22 14:14:59.442 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-22 14:14:59.451 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-22 14:14:59.501 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2021-06-22 14:14:59.992 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=61240a88-f669-3dd5-9dae-e5ed83f50a74
+2021-06-22 14:15:04.688 INFO  org.redisson.Version Line:41  - Redisson 3.10.1
+2021-06-22 14:15:07.143 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:169 - 1 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 14:15:09.162 INFO  org.redisson.connection.pool.MasterConnectionPool Line:169 - 10 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 14:15:11.078 INFO  com.alibaba.nacos.client.naming Line:56  - initializer namespace from System Property :null
+2021-06-22 14:15:11.082 INFO  com.alibaba.nacos.client.naming Line:65  - initializer namespace from System Environment :null
+2021-06-22 14:15:11.085 INFO  com.alibaba.nacos.client.naming Line:75  - initializer namespace from System Property :null
+2021-06-22 14:15:11.662 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:58  - Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-06-22 14:15:12.024 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-22 14:15:12.362 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 14:15:12.379 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 14:15:12.860 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-22 14:15:13.282 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:181 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 14:15:14.499 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:160 - Context refreshed
+2021-06-22 14:15:14.541 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:163 - Found 1 custom documentation plugin(s)
+2021-06-22 14:15:14.617 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2021-06-22 14:15:14.977 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:61  - Started SeckillProviderApplicationTests in 21.86 seconds (JVM running for 26.277)
+2021-06-22 14:15:15.040 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config+DEFAULT_GROUP
+2021-06-22 14:15:15.045 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config, group=DEFAULT_GROUP, cnt=1
+2021-06-22 14:15:15.046 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config.yaml+DEFAULT_GROUP
+2021-06-22 14:15:15.048 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config.yaml, group=DEFAULT_GROUP, cnt=1
+2021-06-22 14:15:15.099 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:522 - get changedGroupKeys:[]
+2021-06-22 14:15:15.619 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:218 - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 14:15:15.626 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-22 14:55:11.686 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-22 14:55:11.799 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-22 14:55:12.316 INFO  com.alibaba.nacos.client.config.utils.JVMUtil Line:47  - isMultiInstance:false
+2021-06-22 14:55:12.383 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-22 14:55:12.408 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-22 17:39:26.151 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-22 17:39:26.253 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-22 17:39:26.696 INFO  com.alibaba.nacos.client.config.utils.JVMUtil Line:47  - isMultiInstance:false
+2021-06-22 17:39:26.761 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-22 17:39:26.784 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-22 17:39:29.145 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-22 17:39:29.154 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-22 17:39:29.239 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2021-06-22 17:39:29.759 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=61240a88-f669-3dd5-9dae-e5ed83f50a74
+2021-06-22 17:39:34.751 INFO  org.redisson.Version Line:41  - Redisson 3.10.1
+2021-06-22 17:39:36.510 INFO  org.redisson.connection.pool.MasterConnectionPool Line:169 - 10 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 17:39:36.519 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:169 - 1 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-22 17:39:38.909 INFO  com.alibaba.nacos.client.naming Line:56  - initializer namespace from System Property :null
+2021-06-22 17:39:38.919 INFO  com.alibaba.nacos.client.naming Line:65  - initializer namespace from System Environment :null
+2021-06-22 17:39:38.925 INFO  com.alibaba.nacos.client.naming Line:75  - initializer namespace from System Property :null
+2021-06-22 17:39:39.768 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:58  - Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-06-22 17:39:40.312 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-22 17:39:40.774 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 17:39:40.793 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-22 17:39:41.622 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-22 17:39:42.281 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:181 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 17:39:44.792 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:160 - Context refreshed
+2021-06-22 17:39:44.849 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:163 - Found 1 custom documentation plugin(s)
+2021-06-22 17:39:44.983 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2021-06-22 17:39:45.484 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:61  - Started SeckillProviderApplicationTests in 22.4 seconds (JVM running for 24.749)
+2021-06-22 17:39:45.591 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config+DEFAULT_GROUP
+2021-06-22 17:39:45.603 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config, group=DEFAULT_GROUP, cnt=1
+2021-06-22 17:39:45.605 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config.yaml+DEFAULT_GROUP
+2021-06-22 17:39:45.618 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config.yaml, group=DEFAULT_GROUP, cnt=1
+2021-06-22 17:39:45.648 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:522 - get changedGroupKeys:[]
+2021-06-22 17:39:46.340 INFO  io.lettuce.core.EpollProvider Line:68  - Starting without optional epoll library
+2021-06-22 17:39:46.344 INFO  io.lettuce.core.KqueueProvider Line:70  - Starting without optional kqueue library
+2021-06-22 17:39:46.583 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2021-06-22 17:39:47.219 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2021-06-22 17:39:48.222 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:218 - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-22 17:39:48.230 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-22 17:39:48.445 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+2021-06-22 17:39:50.999 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
