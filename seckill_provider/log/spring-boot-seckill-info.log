@@ -1,0 +1,140 @@
+2021-06-23 09:32:29.891 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-23 09:32:30.150 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-23 09:32:32.821 INFO  com.alibaba.nacos.client.config.utils.JVMUtil Line:47  - isMultiInstance:false
+2021-06-23 09:32:32.883 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-23 09:32:32.908 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-23 09:32:36.564 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-23 09:32:36.585 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-23 09:32:36.677 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 45ms. Found 0 Redis repository interfaces.
+2021-06-23 09:32:37.712 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=61240a88-f669-3dd5-9dae-e5ed83f50a74
+2021-06-23 09:32:45.947 INFO  org.redisson.Version Line:41  - Redisson 3.10.1
+2021-06-23 09:32:48.767 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:169 - 1 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-23 09:32:54.845 INFO  org.redisson.connection.pool.MasterConnectionPool Line:169 - 10 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-23 09:32:57.106 INFO  com.alibaba.nacos.client.naming Line:56  - initializer namespace from System Property :null
+2021-06-23 09:32:57.109 INFO  com.alibaba.nacos.client.naming Line:65  - initializer namespace from System Environment :null
+2021-06-23 09:32:57.112 INFO  com.alibaba.nacos.client.naming Line:75  - initializer namespace from System Property :null
+2021-06-23 09:32:57.809 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:58  - Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-06-23 09:32:58.525 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-23 09:32:59.080 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-23 09:32:59.101 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-23 09:32:59.763 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-23 09:33:00.392 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:181 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-23 09:33:02.206 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:160 - Context refreshed
+2021-06-23 09:33:02.260 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:163 - Found 1 custom documentation plugin(s)
+2021-06-23 09:33:02.400 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2021-06-23 09:33:02.937 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:61  - Started SeckillProviderApplicationTests in 35.947 seconds (JVM running for 38.077)
+2021-06-23 09:33:03.036 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config+DEFAULT_GROUP
+2021-06-23 09:33:03.041 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config, group=DEFAULT_GROUP, cnt=1
+2021-06-23 09:33:03.042 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config.yaml+DEFAULT_GROUP
+2021-06-23 09:33:03.045 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config.yaml, group=DEFAULT_GROUP, cnt=1
+2021-06-23 09:33:03.092 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:522 - get changedGroupKeys:[]
+2021-06-23 09:33:03.774 INFO  io.lettuce.core.EpollProvider Line:68  - Starting without optional epoll library
+2021-06-23 09:33:03.777 INFO  io.lettuce.core.KqueueProvider Line:70  - Starting without optional kqueue library
+2021-06-23 09:33:04.037 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2021-06-23 09:33:04.820 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2021-06-23 09:33:06.027 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:218 - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-23 09:33:06.039 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-23 09:33:06.207 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+2021-06-23 09:33:07.950 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
+2021-06-23 14:07:37.751 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-23 14:07:37.852 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-23 14:07:38.414 INFO  com.alibaba.nacos.client.config.utils.JVMUtil Line:47  - isMultiInstance:false
+2021-06-23 14:07:38.477 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-23 14:07:38.499 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-23 14:07:41.105 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-23 14:07:41.114 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-23 14:07:41.211 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 43ms. Found 0 Redis repository interfaces.
+2021-06-23 14:07:41.927 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=61240a88-f669-3dd5-9dae-e5ed83f50a74
+2021-06-23 14:07:47.723 INFO  org.redisson.Version Line:41  - Redisson 3.10.1
+2021-06-23 14:07:49.555 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:169 - 1 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-23 14:07:49.555 INFO  org.redisson.connection.pool.MasterConnectionPool Line:169 - 10 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-23 14:07:52.200 INFO  com.alibaba.nacos.client.naming Line:56  - initializer namespace from System Property :null
+2021-06-23 14:07:52.206 INFO  com.alibaba.nacos.client.naming Line:65  - initializer namespace from System Environment :null
+2021-06-23 14:07:52.214 INFO  com.alibaba.nacos.client.naming Line:75  - initializer namespace from System Property :null
+2021-06-23 14:07:53.212 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:58  - Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-06-23 14:07:53.888 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-23 14:07:54.403 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-23 14:07:54.426 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-23 14:07:55.184 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-23 14:07:55.661 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:181 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-23 14:07:58.805 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:160 - Context refreshed
+2021-06-23 14:07:58.946 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:163 - Found 1 custom documentation plugin(s)
+2021-06-23 14:07:59.064 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2021-06-23 14:07:59.592 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:61  - Started SeckillProviderApplicationTests in 25.078 seconds (JVM running for 27.441)
+2021-06-23 14:07:59.690 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config+DEFAULT_GROUP
+2021-06-23 14:07:59.697 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config, group=DEFAULT_GROUP, cnt=1
+2021-06-23 14:07:59.698 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config.yaml+DEFAULT_GROUP
+2021-06-23 14:07:59.700 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config.yaml, group=DEFAULT_GROUP, cnt=1
+2021-06-23 14:07:59.749 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:522 - get changedGroupKeys:[]
+2021-06-23 14:08:00.876 INFO  io.lettuce.core.EpollProvider Line:68  - Starting without optional epoll library
+2021-06-23 14:08:00.880 INFO  io.lettuce.core.KqueueProvider Line:70  - Starting without optional kqueue library
+2021-06-23 14:08:01.219 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2021-06-23 14:08:02.224 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2021-06-23 14:08:03.788 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:218 - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-23 14:08:03.794 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-23 14:08:03.976 INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+2021-06-23 14:08:04.237 INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
+2021-06-23 14:13:09.386 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-23 14:13:09.509 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-23 14:13:10.175 INFO  com.alibaba.nacos.client.config.utils.JVMUtil Line:47  - isMultiInstance:false
+2021-06-23 14:13:10.238 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-23 14:13:10.261 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-23 14:13:13.268 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-23 14:13:13.288 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-23 14:13:13.365 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 33ms. Found 0 Redis repository interfaces.
+2021-06-23 14:13:13.919 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=61240a88-f669-3dd5-9dae-e5ed83f50a74
+2021-06-23 14:13:20.218 INFO  org.redisson.Version Line:41  - Redisson 3.10.1
+2021-06-23 14:13:34.302 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener Line:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-23 14:13:36.573 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-23 14:13:36.580 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-23 14:13:37.887 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-23 14:13:37.895 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-23 14:13:37.916 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2021-06-23 14:13:38.120 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=61240a88-f669-3dd5-9dae-e5ed83f50a74
+2021-06-23 14:13:39.663 INFO  org.redisson.Version Line:41  - Redisson 3.10.1
+2021-06-23 14:13:39.775 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:169 - 1 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-23 14:13:41.970 INFO  org.redisson.connection.pool.MasterConnectionPool Line:169 - 10 connections initialized for 150.158.156.214/150.158.156.214:6379
+2021-06-23 14:13:45.097 INFO  com.alibaba.nacos.client.naming Line:56  - initializer namespace from System Property :null
+2021-06-23 14:13:45.108 INFO  com.alibaba.nacos.client.naming Line:65  - initializer namespace from System Environment :null
+2021-06-23 14:13:45.114 INFO  com.alibaba.nacos.client.naming Line:75  - initializer namespace from System Property :null
+2021-06-23 14:13:45.973 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:58  - Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-06-23 14:13:46.836 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-23 14:13:47.725 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-23 14:13:47.753 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-23 14:13:49.487 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-23 14:13:50.694 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:181 - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-23 14:13:52.953 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:160 - Context refreshed
+2021-06-23 14:13:53.014 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:163 - Found 1 custom documentation plugin(s)
+2021-06-23 14:13:53.179 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2021-06-23 14:13:53.677 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:61  - Started SeckillProviderApplicationTests in 19.146 seconds (JVM running for 52.302)
+2021-06-23 14:13:53.836 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config+DEFAULT_GROUP
+2021-06-23 14:13:53.846 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config, group=DEFAULT_GROUP, cnt=1
+2021-06-23 14:13:53.847 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:197 - [fixed-150.158.156.214_8848] [subscribe] seckill-provider-config.yaml+DEFAULT_GROUP
+2021-06-23 14:13:53.852 INFO  com.alibaba.nacos.client.config.impl.CacheData Line:92  - [fixed-150.158.156.214_8848] [add-listener] ok, tenant=, dataId=seckill-provider-config.yaml, group=DEFAULT_GROUP, cnt=1
+2021-06-23 14:13:53.900 INFO  com.alibaba.nacos.client.config.impl.ClientWorker Line:522 - get changedGroupKeys:[]
+2021-06-23 14:13:54.800 INFO  io.lettuce.core.EpollProvider Line:68  - Starting without optional epoll library
+2021-06-23 14:13:54.807 INFO  io.lettuce.core.KqueueProvider Line:70  - Starting without optional kqueue library
+2021-06-23 14:13:55.644 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:218 - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2021-06-23 14:13:55.661 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-23 14:45:54.562 INFO  com.alibaba.nacos.client.config.impl.LocalConfigInfoProcessor Line:195 - LOCAL_SNAPSHOT_PATH:C:\Users\Re\nacos\config
+2021-06-23 14:45:54.678 INFO  com.alibaba.nacos.client.config.impl.Limiter Line:53  - limitTime:5.0
+2021-06-23 14:46:03.238 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-23 14:46:03.275 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-23 14:46:05.795 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-23 14:46:05.800 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-23 14:46:05.853 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2021-06-23 14:46:06.307 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=869e45de-756c-38b4-bd08-09024561a9fd
+2021-06-23 14:46:08.268 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener Line:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-23 14:46:18.267 INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration Line:105 - Located property source: [BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-seckill-provider-config,DEFAULT_GROUP'}]
+2021-06-23 14:46:18.273 INFO  com.re.seckillProvider.SeckillProviderApplicationTests Line:651 - No active profile set, falling back to default profiles: default
+2021-06-23 14:46:19.481 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-23 14:46:19.482 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-23 14:46:19.492 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2021-06-23 14:46:19.624 INFO  org.springframework.cloud.context.scope.GenericScope Line:295 - BeanFactory id=869e45de-756c-38b4-bd08-09024561a9fd
+2021-06-23 14:46:20.066 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener Line:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
